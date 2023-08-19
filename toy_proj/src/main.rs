@@ -3,7 +3,12 @@ struct Foo {
 }
 
 fn main() {
-    let foo = Foo { x: 42 };
-    let f = &foo;
+    let mut foo = Foo { x: 42 };
+    let f = &mut foo;
+
+    f.x = 15;
     println!("{}", f.x);
+    
+    foo.x = 13;
+    println!("{}", foo.x);
 }
