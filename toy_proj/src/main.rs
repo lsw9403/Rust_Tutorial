@@ -1,14 +1,8 @@
-struct Foo {
-    x: i32,
-}
-
 fn main() {
-    let mut foo = Foo { x: 42 };
-    let f = &mut foo;
+    for num in 1..4 {
+        println!("{}", num);
+    }
 
-    f.x = 15;
-    println!("{}", f.x);
-    
-    foo.x = 13;
-    println!("{}", foo.x);
+    println!("Lift Off!!");
 }
+`
